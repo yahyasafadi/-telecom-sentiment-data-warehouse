@@ -14,15 +14,11 @@ def clean_text_for_search(text: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFD", str(text).lower()) if unicodedata.category(c) != "Mn")
 
 def get_topic(comment: str) -> str:
-    """
-    Assigne le sujet avec une méthode ultra-rapide par recherche de mots-clés.
-    """
     if not isinstance(comment, str) or len(comment) < 5: 
         return "autre"
         
     norm_comment = clean_text_for_search(comment)
     
-    # Compte les occurrences de mots-clés pour chaque sujet de façon hyper rapide
     scores = {}
     for topic, keywords in TOPICS.items():
         pattern = r"\b(" + "|".join(keywords) + r")\b"

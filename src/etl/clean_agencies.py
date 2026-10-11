@@ -7,7 +7,6 @@ def clean_agencies():
         if not os.path.exists(input_path): continue
         
         df = pd.read_csv(input_path)
-        # Nettoyage ultra simple
         df['adresse'] = df['adresse'].astype(str).str.replace(r'[\n\r]', '', regex=True).str.strip()
         df["num_agence"] = df["num_agence"].astype(float).astype(int, errors='ignore')
         
