@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# 📊 Analyse des Sentiments & Data Warehouse
-Ce projet est une solution complète (End-to-End) de **Data Engineering** et de **Data Science** conçue pour analyser la satisfaction client des opérateurs télécoms au Maroc (IAM, INWI, Orange).
-Il couvre l'intégralité du cycle de vie de la donnée : de l'extraction brute sur le web (Scraping) jusqu'à la modélisation en entrepôt de données (Data Warehouse) et la création de tableaux de bord Business Intelligence (BI).
-## 🚀 Fonctionnalités Principales
-=======
 # 📊 Analyse des Sentiments & Data Warehouse (Télécom Maroc)
 
 Ce projet est une solution complète (End-to-End) de **Data Engineering** et de **Data Science** conçue pour analyser la satisfaction client des opérateurs télécoms au Maroc (IAM, INWI, Orange).
@@ -11,8 +5,6 @@ Ce projet est une solution complète (End-to-End) de **Data Engineering** et de 
 Il couvre l'intégralité du cycle de vie de la donnée : de l'extraction brute sur le web (Scraping) jusqu'à la modélisation en entrepôt de données (Data Warehouse) et la création de tableaux de bord Business Intelligence (BI).
 
 ## 🚀 Fonctionnalités Principales
-
->>>>>>> cd7283c (new changes)
 1. **Data Extraction (Scraping)** : Récupération automatisée des avis clients et des informations des agences depuis diverses sources.
 2. **Traitement NLP (Intelligence Artificielle)** :
    - Analyse des sentiments (Score de -1 à 1) via des modèles **HuggingFace** (`pipeline`).
